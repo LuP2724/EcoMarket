@@ -1,0 +1,130 @@
+/*MENU TOPHEADER*/
+.topheader {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.Menu-Horizontal li a {
+  text-decoration: none;
+  padding: 0.938rem 1.25rem;
+  color: #336d39;
+}
+.Menu-Horizontal li a:hover {
+  color: rgb(4, 105, 26);
+}
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 12.5rem;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+.Menu-Vertical li a {
+  display: block;
+  color: black;
+}
+.Menu-Vertical li {
+  background-color: #d8ffdc;
+}
+
+/*Seccion mercado*/
+.seccion-mercado {
+  padding: 3.75rem 1.25rem;
+  background-color: rgb(217, 219, 217);
+}
+.div-general-mercado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-promo-text {
+  flex: 1;
+}
+.div-promo-text h2 {
+  color: rgb(62, 100, 62);
+  margin-bottom: 0.938rem;
+}
+.div-promo-text p {
+  color: #595974;
+  line-height: 1.6;
+}
+.div-promo-img {
+  flex: 1;
+}
+.div-promo-img img {
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+/*Body*/
+body {
+}
+
+/*formulairio*/
+.seccion-formulario {
+  background-color: #8bbd90;
+  padding: 2.5rem;
+  border: 0.188rem solid rgb(9, 9, 14);
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.div-contenido-formulario {
+  background-color: rgb(214, 228, 139);
+  padding: 1.875rem;
+  border: 0.13rem solid blueviolet;
+  border-radius: 0.563rem;
+  max-width: 31.25rem;
+}
+.campo {
+  background-color: #ebebeb;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border: 0.063rem #0fd129;
+  border-radius: 0.313rem;
+}
+.formulario label {
+  display: block;
+  color: rgb(26, 107, 22);
+  font-weight: 200;
+}
+.formulario input[inputtype="text"],
+.formulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid red;
+  border-radius: 10px;
+}
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 8px;
+  background-color: rgb(185, 207, 200);
+  border: 1px;
+  border-radius: 1.5px solid pink;
+}
+.formulario button {
+  background-color: #f7f7f7;
+  border: 2px solid rgb(50, 152, 84);
+  border-radius: 28px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
