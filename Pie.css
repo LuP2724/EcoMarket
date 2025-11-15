@@ -1,6 +1,6 @@
 /* Footer general */
 .footer {
-  background-color: #17aa60; /* Fondo oscuro para contraste */
+  background-color: #23c473; /* Fondo oscuro para contraste */
   color: rgb(240, 240, 240);
   padding: 2rem 1rem;
   font-family: "Roboto", sans-serif;
@@ -12,7 +12,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: auto;
   gap: 2rem;
 }
@@ -20,11 +20,11 @@
 /* Marca o logotipo */
 .footer-brand {
   flex: 1;
-  min-width: 200px;
+  min-width: 15.5rem;
 }
 
 .footer-logo {
-  width: 60px;
+  width: 3.75rem;
   height: auto;
   margin-bottom: 0.5rem;
 }
@@ -49,12 +49,12 @@
 /* Redes sociales con íconos */
 .footer-social {
   flex: 1;
-  min-width: 200px;
+  min-width: 12.5rem;
 }
 
 .social-icon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   margin-right: 0.5rem;
   transition: transform 0.2s ease-in-out;
 }
@@ -64,7 +64,7 @@
 }
 
 /* Responsive para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .footer-container {
     flex-direction: column;
     align-items: center;

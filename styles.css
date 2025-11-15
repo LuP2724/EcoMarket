@@ -18,7 +18,7 @@
 .Menu-Horizontal li a {
   text-decoration: none;
   padding: 0.938rem 1.25rem;
-  color: #336d39;
+  color: #e4e4e4;
 }
 .Menu-Horizontal li a:hover {
   color: rgb(4, 105, 26);
@@ -106,25 +106,25 @@ body {
   color: rgb(26, 107, 22);
   font-weight: 200;
 }
-.formulario input[inputtype="text"],
+.formulario input[type="text"],
 .formulario select {
   width: 100%;
-  padding: 10px;
-  border: 1.5px solid red;
-  border-radius: 10px;
+  padding: 1.25rem;
+  border: 0.094rem solid red;
+  border-radius: 0.625rem;
 }
 .lista-checkbox,
 .lista-radio {
   list-style: none;
-  padding: 8px;
+  padding: 0.5rem;
   background-color: rgb(185, 207, 200);
-  border: 1px;
-  border-radius: 1.5px solid pink;
+  border: 0.063rem;
+  border-radius: 0.094rem solid pink;
 }
 .formulario button {
   background-color: #f7f7f7;
-  border: 2px solid rgb(50, 152, 84);
-  border-radius: 28px;
-  padding: 10px 20px;
+  border: 0.125rem solid rgb(50, 152, 84);
+  border-radius: 1.75rem;
+  padding: 0.625rem 1.25rem;
   cursor: pointer;
 }
