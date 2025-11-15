@@ -32,7 +32,7 @@
 /* Enlaces legales */
 .footer-links {
   flex: 1;
-  min-width: 200px;
+  min-width: 12.5rem;
 }
 
 .footer-links a {
