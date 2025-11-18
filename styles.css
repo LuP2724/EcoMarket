@@ -72,6 +72,11 @@
   width: 100%;
   max-width: 31.25rem;
 }
+.logo-principal {
+  width: 5rem;
+  height: auto;
+  object-fit: contain;
+}
 
 /*Body*/
 body {
@@ -106,7 +111,7 @@ body {
   color: rgb(26, 107, 22);
   font-weight: 200;
 }
-.formulario input[type="text"],
+.formulario input[inputtype="text"],
 .formulario select {
   width: 100%;
   padding: 1.25rem;
