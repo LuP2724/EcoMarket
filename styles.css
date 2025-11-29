@@ -62,7 +62,7 @@
   margin-bottom: 0.938rem;
 }
 .div-promo-text p {
-  color: #595974;
+  color: #5d7459;
   line-height: 1.6;
 }
 .div-promo-img {
@@ -128,7 +128,7 @@ body {
 }
 .formulario button {
   background-color: #f7f7f7;
-  border: 0.125rem solid rgb(28, 97, 51);
+  border: 0.125rem solid rgb(109, 84, 97);
   border-radius: 1.75rem;
   padding: 0.625rem 1.25rem;
   cursor: pointer;
