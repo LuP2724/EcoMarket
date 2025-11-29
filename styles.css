@@ -114,8 +114,8 @@ body {
 .formulario input[inputtype="text"],
 .formulario select {
   width: 100%;
-  padding: 1.25rem;
-  border: 0.094rem solid red;
+  padding: 0.5rem;
+  border: 0.094rem solid rgb(255, 153, 0);
   border-radius: 0.625rem;
 }
 .lista-checkbox,
