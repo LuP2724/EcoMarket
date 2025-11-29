@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <!--MENU TOPHEADER-->
+    <nav class="topheader">
+      <a herf="" class="logo">
+        <img
+          class="Logo-principal"
+          width=""
+          height=""
+          src="Logos/LogoEcoMarket.png"
+          alt=""
+        />
+      </a>
+      <!-- BOTÓN HAMBURGUESA -->
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+
+        <!-- Ícono de hamburguesa -->
+      </button>
+
+      <ul class="Menu-Horizontal">
+        <li>
+          <a href="">Mercado</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Categorias</a></li>
+            <li><a href="">Frutas de temporada</a></li>
+            <li><a href="">Vegetales organicos</a></li>
+            <li><a href="">Panaderia y granos</a></li>
+            <li><a href="">Lacteos y huevos</a></li>
+          </ul>
+        </li>
+        <li><a href="">Productores</a></li>
+        <li><a href="">Mision</a></li>
+        <li><a href="#Contactanos">Contactanos</a></li>
+      </ul>
+    </nav>
+    <section class="seccion-mercado">
+      <div class="div-general-mercado">
+        <div class="div-promo-text">
+          <h2>Seccion de mercado</h2>
+          <p>
+            Tradicionalmente el mercado era entendido como un lugar donde se
+            cambiaban bienes y servicios, entre demandantes y oferentes. Pero
+            con la llegada de la tecnología, los mercados ya no necesitan un
+            espacio físico. Un ejemplo de ello es que ahora se puede comprar a
+            través de una web.
+          </p>
+          <p>
+            No obstante, por esa razón, consideramos que hay mercado mientras
+            haya intenciones de comprar y de vender. Siempre y cuando los
+            participantes estén de acuerdo en efectuar los intercambios, a un
+            precio acordado.
+          </p>
+        </div>
+        <div class="div-promo-img">
+          <img src="Logos/mercado.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--SECCION FORMULARIO-->
+    <section class="seccion-formulario">
+      <div class="div-contenido-formulario">
+        <h2>Formulario de registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <!--DIV1-input =text ---->
+          <div class="campo">
+            <label for="nombre">Nombres completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombre"
+            />
+          </div>
+          <!--DIV2 lista deseplegable---->
+          <div class="campo">
+            <label for="nombre">Pais:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un pais</option>
+              <option value="peru">Peru</option>
+              <option value="argentina">Argentina</option>
+              <option value="brazil">Brazil</option>
+            </select>
+          </div>
+          <!--DIV3 checkbox---->
+          <div class="campo">
+            <label>Interes:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="a"
+                  />interes</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Productos"
+                    value="b"
+                  />productos</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Contactanos"
+                    value="c"
+                  />Contactanos</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Productores"
+                    value="d"
+                  />productores</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--DIV4 radio---->
+          <div class="campo">
+            <label>Products:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="Intereses"
+                    value="a"
+                  />interes</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="Productos"
+                    value="b"
+                  />productos</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Boton de envio-->
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="Logos/LogoEcoMarket.png" alt="Logo" class="footer-logo" />
+            <p>EcoMarket</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>
