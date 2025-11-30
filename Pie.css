@@ -1,12 +1,13 @@
-/* Footer general */
+/* ----------------------------- */
+/* ## PIE DE PÁGINA (FOOTER) */
+/* ----------------------------- */
 .footer {
-  background-color: #30644a; /* Fondo oscuro para contraste */
-  color: rgb(240, 240, 240);
-  padding: 2rem 1rem;
+  background-color: #1C4535; /* Fondo Verde Bosque */
+  color: #FAF9F6; /* Texto Crema */
+  padding: 2.5rem 1.5rem;
   font-family: "Roboto", sans-serif;
 }
 
-/* Contenedor flexible para 3 columnas */
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -20,7 +21,7 @@
 /* Marca o logotipo */
 .footer-brand {
   flex: 1;
-  min-width: 15.5rem;
+  min-width: 12rem;
 }
 
 .footer-logo {
@@ -29,49 +30,56 @@
   margin-bottom: 0.5rem;
 }
 
-/* Enlaces legales */
-.footer-links {
+.footer-brand p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer-brand small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #C5D8AD;
+}
+
+/* Enlaces legales y Social */
+.footer-links, .footer-social {
   flex: 1;
-  min-width: 12.5rem;
+  min-width: 10rem;
+}
+
+.footer-links h4, .footer-social h4 {
+  color: #A98B5E; /* Títulos en Dorado/Tierra */
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #A98B5E;
+  padding-bottom: 0.5rem;
 }
 
 .footer-links a {
   display: block;
-  color: #ccc;
+  color: #C5D8AD;
   text-decoration: none;
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
+  transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: #632727;
+  color: #FAF9F6;
 }
 
 /* Redes sociales con íconos */
-.footer-social {
-  flex: 1;
-  min-width: 12.5rem;
+.footer-social a {
+  display: inline-block;
+  margin-right: 0.75rem;
 }
 
 .social-icon {
   width: 2rem;
   height: 2rem;
-  margin-right: 0.5rem;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  filter: invert(10%) sepia(0%); /* Iconos blancos en hover */
 }
 
 .social-icon:hover {
-  transform: scale(1.2);
-}
+  transform: scale(1.15);
 
-/* Responsive para pantallas pequeñas */
-@media (max-width: 48rem) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-social img {
-    margin-bottom: 0.5rem;
-  }
 }

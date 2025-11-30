@@ -1,135 +1,278 @@
-/*MENU TOPHEADER*/
-.topheader {
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.25rem;
-}
-.Menu-Horizontal {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-.Menu-Horizontal li a {
-  text-decoration: none;
-  padding: 0.938rem 1.25rem;
-  color: #e4e4e4;
-}
-.Menu-Horizontal li a:hover {
-  color: rgb(4, 105, 26);
-}
-.Menu-Vertical {
-  padding: 0;
-  position: absolute;
-  display: none;
-  list-style: none;
-  width: 12.5rem;
-}
-.Menu-Horizontal li:hover .Menu-Vertical {
-  display: block;
-}
-.Menu-Vertical li a {
-  display: block;
-  color: black;
-}
-.Menu-Vertical li {
-  background-color: #d8ffdc;
+
+/* Paleta: Verde Bosque (#1C4535), Oliva Suave (#C5D8AD), Crema (#FAF9F6), Tierra (#A98B5E) */
+
+/* Reset Básico y Estilos Generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/*Seccion mercado*/
-.seccion-mercado {
-  padding: 3.75rem 1.25rem;
-  background-color: rgb(217, 219, 217);
-}
-.div-general-mercado {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 75rem;
-  margin: 0 auto;
-  gap: 2.5rem;
-}
-.div-promo-text {
-  flex: 1;
-}
-.div-promo-text h2 {
-  color: rgb(62, 100, 62);
-  margin-bottom: 0.938rem;
-}
-.div-promo-text p {
-  color: #5d7459;
-  line-height: 1.6;
-}
-.div-promo-img {
-  flex: 1;
-}
-.div-promo-img img {
-  width: 100%;
-  max-width: 31.25rem;
-}
-.Logo-principal {
-  width: 5rem;
-  height: auto;
-  object-fit: contain;
-}
-
-/*Body*/
 body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    background-color: #FAF9F6; /* Fondo Crema */
+    line-height: 1.6;
+    padding-top: 5rem; /* Espacio para el topheader fijo */
 }
 
-/*formulairio*/
+/* ----------------------------- */
+/* ## ENCABEZADO Y NAVEGACIÓN (TOPHEADER) */
+/* ----------------------------- */
+.topheader {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #FAF9F6;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+}
+
+.Logo-principal {
+    width: 4.5rem;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Menú Horizontal */
+.Menu-Horizontal {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.Menu-Horizontal li a {
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    color: #1C4535; /* Verde Bosque */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.Menu-Horizontal li a:hover {
+    color: #A98B5E; /* Dorado/Tierra para hover */
+}
+
+/* Menú Desplegable (Vertical) */
+.Menu-Vertical {
+    padding: 0;
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 15rem;
+    background-color: #FAF9F6;
+    border: 1px solid #C5D8AD;
+
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+    display: block;
+}
+
+.Menu-Vertical li a {
+    display: block;
+    color: #333333;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.Menu-Vertical li:hover {
+    background-color: #C5D8AD; /* Verde Oliva Suave para hover */
+}
+
+/* ----------------------------- */
+/* ## SECCIÓN MERCADO (HERO/INFO) */
+/* ----------------------------- */
+.seccion-mercado {
+    padding: 4rem 1.5rem;
+    background-color: #C5D8AD; /* Fondo Verde Oliva Suave */
+}
+
+.div-general-mercado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.div-promo-text {
+    flex: 1;
+    min-width: 18rem;
+}
+
+.div-promo-text h2 {
+    color: #1C4535;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.div-promo-text p {
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.div-promo-img {
+    flex: 1;
+    min-width: 18rem;
+    text-align: right;
+}
+
+.div-promo-img img {
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del Botón de la Sección Mercado */
+.btn-verde {
+    display: inline-block;
+    background-color: #A98B5E; /* Dorado/Tierra */
+    color: #FAF9F6;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-verde:hover {
+    background-color: #92754A;
+    transform: translateY(-2px);
+}
+
+/* ----------------------------- */
+/* ## SECCIÓN VÍDEO */
+/* ----------------------------- */
+.seccion-video {
+    padding: 4rem 1.5rem;
+    background-color: #FAF9F6;
+    text-align: center;
+}
+
+.div-contenido-video {
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+.div-contenido-video h2 {
+    color: #1C4535;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ----------------------------- */
+/* ## FORMULARIO */
+/* ----------------------------- */
 .seccion-formulario {
-  background-color: #8bbd90;
-  padding: 2.5rem;
-  border: 0.188rem solid rgb(9, 9, 14);
-  border-radius: 0.625rem;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2.5rem;
+    padding: 4rem 1.5rem;
+    background-color: #C5D8AD;
+    display: flex;
+    justify-content: center;
 }
+
 .div-contenido-formulario {
-  background-color: rgb(214, 228, 139);
-  padding: 1.875rem;
-  border: 0.13rem solid blueviolet;
-  border-radius: 0.563rem;
-  max-width: 31.25rem;
+    background-color: #FAF9F6;
+    padding: 2rem;
+    border: 1px solid #A98B5E;
+    border-radius: 0.75rem;
+    max-width: 35rem;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.div-contenido-formulario h2 {
+    color: #1C4535;
+    margin-bottom: 0.5rem;
+}
+
+.div-contenido-formulario p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
 .campo {
-  background-color: #ebebeb;
-  padding: 0.938rem;
-  margin-bottom: 0.938rem;
-  border: 0.063rem #0fd129;
-  border-radius: 0.313rem;
+    margin-bottom: 1rem;
 }
+
 .formulario label {
-  display: block;
-  color: rgb(26, 107, 22);
-  font-weight: 200;
+    display: block;
+    color: #1C4535;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
 }
-.formulario input[inputtype="text"],
+
+.formulario input[type="text"],
 .formulario select {
-  width: 100%;
-  padding: 0.5rem;
-  border: 0.094rem solid rgb(255, 153, 0);
-  border-radius: 0.625rem;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #A98B5E;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s;
 }
+
+.formulario input[type="text"]:focus,
+.formulario select:focus {
+    border-color: #1C4535;
+    outline: none;
+}
+
 .lista-checkbox,
 .lista-radio {
-  list-style: none;
-  padding: 0.5rem;
-  background-color: rgb(185, 207, 200);
-  border: 0.063rem;
-  border-radius: 0.094rem solid pink;
+    list-style: none;
+    padding: 0.75rem;
+    background-color: #F0F0E8;
+    border: 1px solid #D8D8D0;
+    border-radius: 0.5rem;
+
 }
-.formulario button {
-  background-color: #f7f7f7;
-  border: 0.125rem solid rgb(109, 84, 97);
-  border-radius: 1.75rem;
-  padding: 0.625rem 1.25rem;
-  cursor: pointer;
+
+.formulario button[type="submit"] {
+    background-color: #1C4535;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button[type="submit"]:hover {
+    background-color: #A98B5E;
 }
