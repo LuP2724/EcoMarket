@@ -1,278 +1,272 @@
-
 /* Paleta: Verde Bosque (#1C4535), Oliva Suave (#C5D8AD), Crema (#FAF9F6), Tierra (#A98B5E) */
-
-/* Reset Básico y Estilos Generales */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333333;
-    background-color: #FAF9F6; /* Fondo Crema */
-    line-height: 1.6;
-    padding-top: 5rem; /* Espacio para el topheader fijo */
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  background-color: #faf9f6; /* Fondo Crema */
+  line-height: 1.6;
+  padding-top: 5rem; /* Espacio para el topheader fijo */
 }
 
 /* ----------------------------- */
 /* ## ENCABEZADO Y NAVEGACIÓN (TOPHEADER) */
 /* ----------------------------- */
 .topheader {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background-color: #FAF9F6;
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #faf9f6;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
 
 .Logo-principal {
-    width: 4.5rem;
-    height: auto;
-    object-fit: contain;
+  width: 4.5rem;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Menú Horizontal */
 .Menu-Horizontal {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
 }
 
 .Menu-Horizontal li a {
-    text-decoration: none;
-    padding: 0.75rem 1rem;
-    color: #1C4535; /* Verde Bosque */
-    font-weight: 500;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  color: #1c4535; /* Verde Bosque */
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .Menu-Horizontal li a:hover {
-    color: #A98B5E; /* Dorado/Tierra para hover */
+  color: #a98b5e; /* Dorado/Tierra para hover */
 }
 
 /* Menú Desplegable (Vertical) */
 .Menu-Vertical {
-    padding: 0;
-    position: absolute;
-    display: none;
-    list-style: none;
-    width: 15rem;
-    background-color: #FAF9F6;
-    border: 1px solid #C5D8AD;
-
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 15rem;
+  background-color: #faf9f6;
+  border: 1px solid #c5d8ad;
 }
 
 .Menu-Horizontal li:hover .Menu-Vertical {
-    display: block;
+  display: block;
 }
 
 .Menu-Vertical li a {
-    display: block;
-    color: #333333;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    transition: background-color 0.3s;
+  display: block;
+  color: #333333;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .Menu-Vertical li:hover {
-    background-color: #C5D8AD; /* Verde Oliva Suave para hover */
+  background-color: #c5d8ad; /* Verde Oliva Suave para hover */
 }
 
 /* ----------------------------- */
 /* ## SECCIÓN MERCADO (HERO/INFO) */
 /* ----------------------------- */
 .seccion-mercado {
-    padding: 4rem 1.5rem;
-    background-color: #C5D8AD; /* Fondo Verde Oliva Suave */
+  padding: 4rem 1.5rem;
+  background-color: #c5d8ad; /* Fondo Verde Oliva Suave */
 }
 
 .div-general-mercado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 75rem;
-    margin: 0 auto;
-    gap: 3rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .div-promo-text {
-    flex: 1;
-    min-width: 18rem;
+  flex: 1;
+  min-width: 18rem;
 }
 
 .div-promo-text h2 {
-    color: #1C4535;
-    margin-bottom: 1rem;
-    font-size: 2.2rem;
+  color: #1c4535;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
 }
 
 .div-promo-text p {
-    color: #333333;
-    line-height: 1.7;
-    margin-bottom: 1rem;
+  color: #333333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
 .div-promo-img {
-    flex: 1;
-    min-width: 18rem;
-    text-align: right;
+  flex: 1;
+  min-width: 18rem;
+  text-align: right;
 }
 
 .div-promo-img img {
-    width: 100%;
-    max-width: 31.25rem;
-    height: auto;
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 31.25rem;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo del Botón de la Sección Mercado */
 .btn-verde {
-    display: inline-block;
-    background-color: #A98B5E; /* Dorado/Tierra */
-    color: #FAF9F6;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
+  display: inline-block;
+  background-color: #a98b5e; /* Dorado/Tierra */
+  color: #faf9f6;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .btn-verde:hover {
-    background-color: #92754A;
-    transform: translateY(-2px);
+  background-color: #92754a;
+  transform: translateY(-2px);
 }
 
 /* ----------------------------- */
 /* ## SECCIÓN VÍDEO */
 /* ----------------------------- */
 .seccion-video {
-    padding: 4rem 1.5rem;
-    background-color: #FAF9F6;
-    text-align: center;
+  padding: 4rem 1.5rem;
+  background-color: #faf9f6;
+  text-align: center;
 }
 
 .div-contenido-video {
-    max-width: 65rem;
-    margin: 0 auto;
+  max-width: 65rem;
+  margin: 0 auto;
 }
 
 .div-contenido-video h2 {
-    color: #1C4535;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+  color: #1c4535;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .video-responsive {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .video-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* ----------------------------- */
 /* ## FORMULARIO */
 /* ----------------------------- */
 .seccion-formulario {
-    padding: 4rem 1.5rem;
-    background-color: #C5D8AD;
-    display: flex;
-    justify-content: center;
+  padding: 4rem 1.5rem;
+  background-color: #c5d8ad;
+  display: flex;
+  justify-content: center;
 }
 
 .div-contenido-formulario {
-    background-color: #FAF9F6;
-    padding: 2rem;
-    border: 1px solid #A98B5E;
-    border-radius: 0.75rem;
-    max-width: 35rem;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #faf9f6;
+  padding: 2rem;
+  border: 1px solid #a98b5e;
+  border-radius: 0.75rem;
+  max-width: 35rem;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .div-contenido-formulario h2 {
-    color: #1C4535;
-    margin-bottom: 0.5rem;
+  color: #1c4535;
+  margin-bottom: 0.5rem;
 }
 
 .div-contenido-formulario p {
-    margin-bottom: 1.5rem;
-    color: #555;
+  margin-bottom: 1.5rem;
+  color: #555;
 }
 
 .campo {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .formulario label {
-    display: block;
-    color: #1C4535;
-    font-weight: 500;
-    margin-bottom: 0.3rem;
+  display: block;
+  color: #1c4535;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
 }
 
 .formulario input[type="text"],
 .formulario select {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #A98B5E;
-    border-radius: 0.5rem;
-    transition: border-color 0.3s;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #a98b5e;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s;
 }
 
 .formulario input[type="text"]:focus,
 .formulario select:focus {
-    border-color: #1C4535;
-    outline: none;
+  border-color: #1c4535;
+  outline: none;
 }
 
 .lista-checkbox,
 .lista-radio {
-    list-style: none;
-    padding: 0.75rem;
-    background-color: #F0F0E8;
-    border: 1px solid #D8D8D0;
-    border-radius: 0.5rem;
-
+  list-style: none;
+  padding: 0.75rem;
+  background-color: #f0f0e8;
+  border: 1px solid #d8d8d0;
+  border-radius: 0.5rem;
 }
 
 .formulario button[type="submit"] {
-    background-color: #1C4535;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #1c4535;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .formulario button[type="submit"]:hover {
-    background-color: #A98B5E;
+  background-color: #a98b5e;
 }
